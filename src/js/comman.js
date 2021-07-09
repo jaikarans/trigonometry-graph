@@ -6,6 +6,7 @@ const canvasHeight = document.getElementById('canvasHeight');
 
 const setCanvas = document.getElementById('setCanvas');
 
+//let notCancel = true;
 
 
 if (canvas.getContext){
