@@ -1,0 +1,9 @@
+{
+  "name": "trigonometry-graphs",
+  "version": "1.0.0",
+  "description": "A webpage to draw some trigonometry function graphs",
+  "main": "index.html",
+  "repository": "https://github.com/jaikarans/trigonometry-graph.git",
+  "author": "jaikarans <jsclg3@gmail.com>",
+  "license": "MIT"
+}
