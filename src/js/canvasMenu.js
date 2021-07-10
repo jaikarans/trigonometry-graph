@@ -30,6 +30,9 @@ canvasMenu.insertAdjacentHTML('beforeend', `
 canvasMenu.insertAdjacentHTML('beforeend', `
     <div>
         <button id="pause">pause</button>
+        <button id="scale">scale</button>
+        <b> This is experimental branch now </b>
+        <b> Please click on "scale" button first before draw</b> 
     </div>
 `);
 

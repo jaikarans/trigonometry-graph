@@ -8,14 +8,16 @@ export let x=0;
 export var scaleX = function (){
     x=0;
     if (window.degreeFrom<0) x = +canvas.width/2 - +window.degreeFrom.value;
-    else x = +canvas.width/2 + +window.degreeFrom.value;
+    else x = +(canvas.width/2)*3.33 + +window.degreeFrom.value;
     console.log(x);
 }
 
 export var incX = function (){
     return x++;
 }
-
+window.scale.addEventListener('click', () => {
+    draw.scale();
+});
 addEventListener('load', () => {
     drawXaxis();
     drawYaxis();

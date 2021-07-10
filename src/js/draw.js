@@ -7,6 +7,9 @@ var v = 0;
 var rectHeight = 3;
 var rectWidth = 3;
 
+export var scale = function (){
+    ctx.scale(0.3, 1);
+};
 
 export var sin = function() {
     v = Math.sin(window.degreeFrom.value * Math.PI / 180);
