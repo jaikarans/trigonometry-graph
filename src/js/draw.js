@@ -1,4 +1,4 @@
-import {canvas, canvasMenu, ctx} from './comman.js'
+import {canvas, ctx} from './comman.js'
 import {notCancel, x, incX} from '../../main.js'
 
 var v = 0;

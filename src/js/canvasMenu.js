@@ -1,4 +1,4 @@
-import {canvas, canvasMenu, ctx} from './comman.js';
+import {canvasMenu} from './comman.js';
 
 canvasMenu.insertAdjacentHTML('afterbegin', `
     <div>
