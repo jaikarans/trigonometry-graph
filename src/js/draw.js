@@ -13,8 +13,7 @@ export var sin = function() {
     v=v*100;
     v= canvas.height/2 - v;
     
-    ctx.lineTo(x ,v );
-    ctx.stroke();
+    ctx.fillRect(x, v, rectWidth, rectHeight);
 
     window.degreeFrom.value++;
     incX();
@@ -27,8 +26,7 @@ export var cos = function() {
     v=v*100;
     v= canvas.height/2 - v;
     
-    ctx.lineTo(x ,v );
-    ctx.stroke();
+    ctx.fillRect(x, v, rectWidth, rectHeight);
 
     window.degreeFrom.value++;
     incX();
