@@ -21,13 +21,40 @@ addEventListener('load', () => {
     drawYaxis();
 });
 
+var dragging = false;
+var lastX;
+var marginLeft = 0;
+
+//adding scrolling of canvas on moblie
+canvas.addEventListener('touchstart', function(e) {
+    var evt = e;
+    dragging = true;
+    lastX = evt.touches[0].clientX;
+    e.preventDefault();
+}, {passive: false});
+
+window.addEventListener('touchmove', function(e) {
+    var evt = e;
+    if (dragging) {
+        var delta = evt.touches[0].clientX - lastX;
+        lastX = evt.touches[0].clientX;
+        marginLeft += delta;
+        canvas.style.marginLeft = marginLeft + "px";
+    }
+    e.preventDefault();
+}, {passive :false});
+
+window.addEventListener('touchend', function() {
+    dragging = false;
+}, {passive: false});
+
+
 window.setCanvas.addEventListener('click', () => {
     canvas.width = window.canvasWidth.value;
     canvas.height = window.canvasHeight.value;
     //draw Axis on Canvas size reset
     drawXaxis();
     drawYaxis();
-
     window.degreeFrom.value = 0;
 });
 
