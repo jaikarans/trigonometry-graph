@@ -1,3 +1,4 @@
+const menuBar = document.getElementById('menuBar');
 const canvas = document.getElementById('canvas');
 const canvasMenu = document.getElementById('canMenu');
 
@@ -13,4 +14,4 @@ if (canvas.getContext){
     var ctx = canvas.getContext('2d');
 }
 
-export {canvas, ctx, canvasMenu, canvasWidth, canvasHeight, setCanvas};
+export {menuBar, canvas, ctx, canvasMenu, canvasWidth, canvasHeight, setCanvas};

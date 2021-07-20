@@ -1,9 +1,20 @@
 import {drawXaxis, drawYaxis} from './src/js/canvas.js';
 import {canvas, ctx} from './src/js/comman.js';
 import * as draw from './src/js/draw.js';
-
+import './src/js/menus.js'
 export let notCancel = true;
 export let x=0;
+
+//menu-bar(icon) animation and visibility of menuOverlay
+window.bar.addEventListener('click', function(){
+    document.getElementById('bar').classList.toggle('change');
+    if (document.getElementById('menuOverlay').style.display == "block"){
+        document.getElementById('menuOverlay').style.display = "none";
+    }
+    else{
+        document.getElementById('menuOverlay').style.display = "block";
+    }
+});
 
 export var scaleX = function (){
     x=0;
