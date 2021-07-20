@@ -1,0 +1,51 @@
+#container {
+  height: 100%;
+  display: flex;
+  flex-flow: column; }
+
+#menuBar {
+  height: 100px;
+  background-color: rgba(55, 245, 55, 0.733); }
+
+#canvasContainer {
+  overflow: hidden;
+  width: 100%;
+  flex-grow: 1; }
+
+#canvas {
+  height: 100%;
+  width: 2000px; }
+
+#bar {
+  width: 60px;
+  height: 60px;
+  margin: 10px; }
+
+.bars div {
+  width: 60px;
+  height: 7px;
+  background-color: #1000f5;
+  margin: 9px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 8px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+#menuOverlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 70%;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=smallMobile.css.map */
