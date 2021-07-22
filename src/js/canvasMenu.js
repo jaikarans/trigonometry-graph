@@ -2,8 +2,8 @@ import {canvasMenu} from './comman.js';
 
 canvasMenu.insertAdjacentHTML('afterbegin', `
     <div>
-        Graph size = <input type="number" id="canvasWidth" value="900">x
-        <input type="number" id="canvasHeight" value="800">
+        Graph size = <input type="number" id="canvasWidth" value="1000">x
+        <input type="number" id="canvasHeight" value="300">
         <button id="setCanvas">set-canvas-size</button>
         <button id="resetDrawing">Reset Drawing</button>
     </div>
