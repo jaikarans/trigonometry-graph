@@ -5,7 +5,7 @@ var v = 0;
 //var x = 0;
 
 var rectHeight = 3;
-var rectWidth = 3;
+var rectWidth = 1;
 
 
 export var sin = function() {

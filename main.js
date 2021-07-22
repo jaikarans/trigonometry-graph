@@ -1,4 +1,4 @@
-import {drawXaxis, drawYaxis} from './src/js/canvas.js';
+import {drawSmallAxisX, drawSmallAxisY, drawXaxis, drawYaxis} from './src/js/canvas.js';
 import {canvas, ctx, menuBar} from './src/js/comman.js';
 import * as draw from './src/js/draw.js';
 import './src/js/menus.js'
@@ -22,11 +22,14 @@ window.clearCanvasMenuBar.addEventListener('click',() => {
     notCancel = false;
     //clear everythig which draw
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    window.degreeFrom.value = 0;
     canvas.width = window.canvasWidth.value;
     canvas.height = window.canvasHeight.value;
     //draw Axis on Canvas size reset
     drawXaxis();
     drawYaxis();
+    drawSmallAxisX();
+    drawSmallAxisY();
 });
 
 window.aboutDeveloper.addEventListener('click', ()=>{
@@ -47,6 +50,8 @@ export var incX = function (){
 addEventListener('load', () => {
     drawXaxis();
     drawYaxis();
+    drawSmallAxisX();
+    drawSmallAxisY();
 });
 
 var dragging = false;
@@ -106,6 +111,8 @@ window.setCanvas.addEventListener('click', () => {
     //draw Axis on Canvas size reset
     drawXaxis();
     drawYaxis();
+    drawSmallAxisX();
+    drawSmallAxisY();
     window.degreeFrom.value = 0;
 });
 
@@ -124,6 +131,8 @@ window.resetDrawing.addEventListener('click', () => {
     //draw Axis on Canvas size reset
     drawXaxis();
     drawYaxis();
+    drawSmallAxisX();
+    drawSmallAxisY();
     window.degreeFrom.value = 0;
 });
 
