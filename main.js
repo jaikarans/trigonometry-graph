@@ -5,6 +5,15 @@ import './src/js/menus.js'
 export let notCancel = true;
 export let x=0;
 
+//setting canvas size according to device width
+if (window.screen.width<=480){
+    canvas.width = 1000;
+    canvas.height = 300;
+}else{
+    canvas.width = 1600;
+    canvas.height = 600;
+}
+
 //menu-bar(icon) animation and visibility of menuOverlay
 window.bar.addEventListener('click', function(){
     document.getElementById('bar').classList.toggle('change');

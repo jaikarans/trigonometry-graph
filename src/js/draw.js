@@ -7,6 +7,14 @@ var v = 0;
 var rectHeight = 3;
 var rectWidth = 1;
 
+if(window.screen.width<=480){
+    rectHeight = 3;
+    rectWidth = 1;
+}else{
+    rectHeight = 3;
+    rectWidth = 3;
+}
+
 
 export var sin = function() {
     v = Math.sin(window.degreeFrom.value * Math.PI / 180);
