@@ -8,4 +8,12 @@ menuBar.insertAdjacentHTML('afterbegin', `
                 <div class="bar3"></div>
         </div>
         
+        <div id="title-menuBar">Graph</div>
+        <div class="buttons">
+                <div class="button-container">
+                        <div id="clearCanvasMenuBar"><p>Clear</p></div>
+                        <div id="aboutDeveloper"><p>About</p></div>
+                <div>
+        </div>
+
 `);

@@ -1,5 +1,5 @@
 import {drawXaxis, drawYaxis} from './src/js/canvas.js';
-import {canvas, ctx} from './src/js/comman.js';
+import {canvas, ctx, menuBar} from './src/js/comman.js';
 import * as draw from './src/js/draw.js';
 import './src/js/menus.js'
 export let notCancel = true;
@@ -14,6 +14,23 @@ window.bar.addEventListener('click', function(){
     else{
         document.getElementById('menuOverlay').style.display = "block";
     }
+});
+
+//menuBar clear butoon
+window.clearCanvasMenuBar.addEventListener('click',() => {
+    //pause graph drawing
+    notCancel = false;
+    //clear everythig which draw
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    canvas.width = window.canvasWidth.value;
+    canvas.height = window.canvasHeight.value;
+    //draw Axis on Canvas size reset
+    drawXaxis();
+    drawYaxis();
+});
+
+window.aboutDeveloper.addEventListener('click', ()=>{
+    window.open('https://github.com/jaikarans', '_blank');
 });
 
 export var scaleX = function (){
