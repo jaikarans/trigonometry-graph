@@ -62,10 +62,20 @@ addEventListener('load', () => {
     drawSmallAxisX();
     drawSmallAxisY();
 });
+/***********************************************
+ *  adding touch events for mobile devices.
+ * 
+ ***********************************************
+ * */ 
 
 var dragging = false;
 var lastX;
 var marginLeft = 0;
+//putting canvas on center (mobile) 
+if (window.screen.width <= 480){
+    marginLeft = -800;
+    canvas.style.marginLeft = marginLeft + "px";
+}
 
 //adding scrolling of canvas on moblie
 canvas.addEventListener('touchstart', function(e) {
