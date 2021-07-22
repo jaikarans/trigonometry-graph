@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/resetStyleSheet.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./dist/style/resetStyleSheet.css" />
+    <link rel="stylesheet" href="./dist/style/style.css" />
+    <link rel="stylesheet" media="only screen and (max-width:480px)" href="./dist/style/smallMobile.css"/>
       
     <title>trigonometry graph</title>
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-    <div id="canMenu">
+    <div id="menuOverlay">
+        <div id="canMenu"></div>
+    </div>
+    <div id="container">
+        <div id="menuBar">
+        </div>
+        <div id="canvasContainer">
+            <canvas id="canvas"></canvas>
+        </div>
     </div>
     <script type="module" src="main.js"></script> 
 </body>

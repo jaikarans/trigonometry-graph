@@ -5,7 +5,15 @@ var v = 0;
 //var x = 0;
 
 var rectHeight = 3;
-var rectWidth = 3;
+var rectWidth = 1;
+
+if(window.screen.width<=480){
+    rectHeight = 3;
+    rectWidth = 1;
+}else{
+    rectHeight = 3;
+    rectWidth = 3;
+}
 
 
 export var sin = function() {
@@ -13,8 +21,7 @@ export var sin = function() {
     v=v*100;
     v= canvas.height/2 - v;
     
-    ctx.lineTo(x ,v );
-    ctx.stroke();
+    ctx.fillRect(x, v, rectWidth, rectHeight);
 
     window.degreeFrom.value++;
     incX();
@@ -27,8 +34,7 @@ export var cos = function() {
     v=v*100;
     v= canvas.height/2 - v;
     
-    ctx.lineTo(x ,v );
-    ctx.stroke();
+    ctx.fillRect(x, v, rectWidth, rectHeight);
 
     window.degreeFrom.value++;
     incX();
