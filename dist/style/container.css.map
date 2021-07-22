@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "container.css",
-	"sources": [
-		"../../src/style/container.scss"
-	],
-	"names": [],
-	"mappings": ""
-}
