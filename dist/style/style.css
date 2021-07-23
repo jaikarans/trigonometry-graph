@@ -7,4 +7,13 @@ body {
 #canvas {
   height: 100%; }
 
+button {
+  cursor: pointer; }
+
+p {
+  cursor: pointer; }
+
+#bar {
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

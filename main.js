@@ -100,28 +100,7 @@ window.addEventListener('touchend', function() {
     dragging = false;
 }, {passive: false});
 
-//adding canvas scrolling to Desktop devices
-canvas.addEventListener('mousedown', function(e) {
-    var evt = e;
-    dragging = true;
-    lastX = evt.clientX;
-    e.preventDefault();
-}, false);
 
-window.addEventListener('mousemove', function(e) {
-    var evt = e;
-    if (dragging) {
-        var delta = evt.clientX - lastX;
-        lastX = evt.clientX;
-        marginLeft += delta;
-        canvas.style.marginLeft = marginLeft + "px";
-    }
-    e.preventDefault();
-}, false);
-
-window.addEventListener('mouseup', function() {
-    dragging = false;
-}, false);
 
 
 window.setCanvas.addEventListener('click', () => {

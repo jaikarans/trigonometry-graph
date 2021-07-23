@@ -18,14 +18,14 @@ canvasMenu.insertAdjacentHTML('beforeend', `
 canvasMenu.insertAdjacentHTML('beforeend', `
     <div class="functionButtons">
         <div class="funRowOne">
-            <div id="sin"><button>sin(&#920&#176)</button></div>
-            <div id="cos"><button>cos(&#920&#176)</button></div>
-            <div id="tan"><button>tan(&#920&#176)</button></div>
+            <div><button id="sin">sin(&#920&#176)</button></div>
+            <div><button id="cos">cos(&#920&#176)</button></div>
+            <div><button id="tan">tan(&#920&#176)</button></div>
         </div>
         <div class="funRowTwo">
-            <div id="cot"><button>cot(&#920&#176)</button></div>
-            <div id="sec"><button>sec(&#920&#176)</button></div>
-            <div id="cosec"><button>csc(&#920&#176)</button></div>
+            <div><button id="cot">cot(&#920&#176)</button></div>
+            <div><button id="sec">sec(&#920&#176)</button></div>
+            <div><button id="cosec">csc(&#920&#176)</button></div>
         </div>
         <div class="rowThree">
             <div id="pause"><button>pause</button></div>
