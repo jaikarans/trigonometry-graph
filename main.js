@@ -32,8 +32,13 @@ window.clearCanvasMenuBar.addEventListener('click',() => {
     //clear everythig which draw
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     window.degreeFrom.value = 0;
-    canvas.width = window.canvasWidth.value;
-    canvas.height = window.canvasHeight.value;
+    if (window.screen.width<=480){
+        canvas.width = 1000;
+        canvas.height = 300;
+    }else{
+        canvas.width = 1600;
+        canvas.height = 600;
+    }
     //draw Axis on Canvas size reset
     drawXaxis();
     drawYaxis();
@@ -100,28 +105,7 @@ window.addEventListener('touchend', function() {
     dragging = false;
 }, {passive: false});
 
-//adding canvas scrolling to Desktop devices
-canvas.addEventListener('mousedown', function(e) {
-    var evt = e;
-    dragging = true;
-    lastX = evt.clientX;
-    e.preventDefault();
-}, false);
 
-window.addEventListener('mousemove', function(e) {
-    var evt = e;
-    if (dragging) {
-        var delta = evt.clientX - lastX;
-        lastX = evt.clientX;
-        marginLeft += delta;
-        canvas.style.marginLeft = marginLeft + "px";
-    }
-    e.preventDefault();
-}, false);
-
-window.addEventListener('mouseup', function() {
-    dragging = false;
-}, false);
 
 
 window.setCanvas.addEventListener('click', () => {
