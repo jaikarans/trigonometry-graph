@@ -7,7 +7,9 @@ git clone https://github.com/jaikarans/trigonometry-graph.git
 ```
 
 ## Installing Dependency
-```yarn```
+```bash
+yarn
+```
 ## Demo
 ![](Demo.gif)
 
