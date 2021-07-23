@@ -5,6 +5,12 @@ A mini fun project to draw some trigonometry functions graph on canvas.
 ```bash
 git clone https://github.com/jaikarans/trigonometry-graph.git
 ```
+
+## Installing Dependency
+```yarn```
+## Demo
+![](Demo.gif)
+
 ## Suggestions
 * You may get error while running `index.html` to prevent this you need a http server install. You can install `Live Server` Extension if you are using vscode.
 
