@@ -139,10 +139,7 @@ window.pause.addEventListener('click', () => {
     notCancel = false;
 });
 
-window.reset.addEventListener('click', () => {
-    
-    window.degreeFrom.value = 0;
-});
+
 
 window.resetDrawing.addEventListener('click', () => {
     canvas.width = window.canvasWidth.value;
