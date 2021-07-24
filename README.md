@@ -1,5 +1,6 @@
 # trigonometry-graph
 A mini fun project to draw some trigonometry functions graph on canvas.
+visit at - [https://jaikarans.github.io/trigonometry-graph/](https://jaikarans.github.io/trigonometry-graph/)
 
 ## Installation
 ```bash
