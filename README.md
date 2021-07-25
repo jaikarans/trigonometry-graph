@@ -15,7 +15,7 @@ yarn
 ![](Demo.gif)
 
 ## Suggestions
-* You may get error while running `index.html` to prevent this you need a http server install. You can install `Live Server` Extension if you are using vscode.
+* You may get error while running `index.html`, to prevent this you need a http server. You can install `Live Server` Extension if you are using vscode.
 
 
 
