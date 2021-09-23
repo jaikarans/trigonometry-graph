@@ -10,6 +10,6 @@
     "node-sass": "^6.0.1"
   },
   "scripts": {
-    "node-scss": "node-sass --watch src/style -o dist/style --source-map dist/style"
+    "node-scss": "node-sass src/style -o dist/style --source-map dist/style"
   }
 }
